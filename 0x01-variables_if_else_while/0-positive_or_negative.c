@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints if number is positive, zero or negative
+ * main - prints if number is positive, zero or negative
  *
  * Return: Always (Success)
  */
@@ -15,11 +15,18 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n < 0)
-		printf ("is positive")
+	{
+		printf("is positive");
+	}
 	else if (n > 0)
-		printf ("is negative")
-	else
-		printf ("is zero")
-			return (0);
+	{
+		printf("is negative");
+	}
+	else if (n == 0)
+	{
+		printf("is zero")
+	}
+	return (0);
 }
-	
+
+
