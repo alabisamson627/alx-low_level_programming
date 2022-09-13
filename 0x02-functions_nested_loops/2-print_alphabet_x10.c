@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * prnt_alphabet_x10 - function to print abc 10 times
@@ -8,8 +8,7 @@ include "main.h"
 
 void print_alphabet_x10(void)
 {
-	char c;
-	char i;
+	char c, i;
 
 	for (i = 0; i <= 9; i++)
 	{
