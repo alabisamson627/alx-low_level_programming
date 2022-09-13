@@ -10,12 +10,15 @@
 
 int main(void)
 {
-	char ch;
+	_putchar('_')
+		_putchar('p');
+		_putchar('u');
+		_putchar('t');
+		_putchar('c');
+		_putchar('h');
+		_putchar('a');
+		_putchar('r');
 
-	for (ch = '_' ; ch = 'p' ; ch = 'u' ; ch = 't' ; ch = 'c' ; ch = 'h' ; ch = 'h' ; ch = 'a' ; ch = 'r')
-	{
-		printf("_purchar \n");
-	}
-	return (0);
+		return (0);
 }
 
