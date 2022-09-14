@@ -4,7 +4,7 @@
  * @c: is int that is will use for the argument of the function
  * Return: 0
  */
-int -isalpha(int c)
+int _isalpha(int c)
 {
 	((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
