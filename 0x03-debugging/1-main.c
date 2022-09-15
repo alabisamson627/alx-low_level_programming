@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.H>
 
 /**
  * main - causes an infinite loop
