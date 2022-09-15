@@ -13,9 +13,9 @@ int main(void)
 
 			1 = 0;
 			/*
-			 * while (1 < 10)
+			 * while (i < 10)
 			 * {
-			 * putchar(1);
+			 * putchar(i);
 			 * }
 			 */
 
