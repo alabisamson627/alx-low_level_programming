@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * print_line - print a straight line
@@ -16,7 +16,7 @@ void print_line(int n)
 	else
 	{
 		for (lnChr = 1; lnChr <= n; ++lnChr)
-			putchar('_');
+			_putchar('_');
 		_putchar('\n');
 	}
 }
