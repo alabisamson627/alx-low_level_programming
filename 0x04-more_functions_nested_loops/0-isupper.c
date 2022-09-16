@@ -11,7 +11,7 @@
 
 int _isupper(int c)
 {
-	int i = isupper(c);
+	int i = _isupper(c);
 
 	if (i > 0)
 	{
