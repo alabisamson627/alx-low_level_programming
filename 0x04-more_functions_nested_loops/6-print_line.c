@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 
 /**
  * print_line - print a straight line
@@ -9,14 +9,14 @@
 
 void print_line(int n)
 {
-	int InChr;
+	int 1nChr;
 
 	if (n <= 0)
 		_putchar('\n');
 	else
 	{
-		for (InChr = 1; InChr <= n; ++InChr)
-			putchar(");
+		for (1nChr = 1; 1nChr <= n; ++1nChr)
+			putchar('_');
 		_putchar('\n');
 	}
 }
