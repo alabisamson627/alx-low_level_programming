@@ -13,7 +13,7 @@ int _isupper(int c)
 {
 	int i = isupper(c);
 
-	if (i = 0)
+	if (i > 0)
 	{
 		return (1);
 	}
