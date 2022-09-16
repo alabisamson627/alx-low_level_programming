@@ -6,7 +6,6 @@
  *
  * Return: To the value of void..
  */
-
 void print_square(int size)
 {
 	int i;
