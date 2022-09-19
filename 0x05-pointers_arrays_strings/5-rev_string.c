@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -9,11 +11,8 @@
 
 void rev_string(char *s)
 {
-	int i;
-	int c;
-	int k;
-	char *a;
-	char aux;
+	int i, c, k;
+	char *a, aux
 
 	a = s;
 
