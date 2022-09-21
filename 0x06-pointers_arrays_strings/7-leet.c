@@ -2,14 +2,14 @@
 
 /**
  * leet -leet encoder
- * @str: The string to be encoded.
+ * @str: The string to be encoded
  *
- * Return: Address of the encoded string.
+ * Return: Address of the encoded string
  */
 
 char *leet(char *str)
 {
-	int indx1 = 0;
+	int i = 0;
 	
 	while (str[i] != '\0')
 	{
