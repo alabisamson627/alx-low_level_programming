@@ -14,7 +14,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r);
  * Return: If r can store the sum - a pointer to the result.
  * If r cannot store the sum - 0.
  */
-char *add__strings(char *n1, char *n2, char *r, int r_index)
+char *add_strings(char *n1, char *n2, char *r, int r_index)
 {
 	int num, tens = 0;
 
@@ -26,14 +26,14 @@ char *add__strings(char *n1, char *n2, char *r, int r_index)
 		tens = num / 10;
 	}
 
-	for (; *n1; n1--, r_index--)
+	for ( ; *n1; n1--, r_index--)
 	{
 		num = (*n1 - '0') + tens;
 		*(r + r_index) = (num % 10) + '0';
 		tens = num / 10;
 	}
 
-	for (; *n2; n2--, r_index--)
+	for ( ; *n2; n2--, r_index--)
 	{
 		num = (*n2 - '0') + tens;
 		*(r + r_index) = (num % 10) + '0';
@@ -69,6 +69,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		n1_len++;
 
 	for (index = 0; *(n2 + index); index++)
+		n2_len++;
 
 		if (size_r <= n1_len + 1 || size_r <= n2_len + 1)
 			return (0);
