@@ -4,7 +4,7 @@
  * leet -leet encoder
  * @str: The string to be encoded
  *
- * Return: Address of the encoded string
+ * Return: address of the encoded string
  */
 
 char *leet(char *str)
@@ -13,8 +13,8 @@ char *leet(char *str)
 	
 	while (str[i] != '\0')
 	{
-		str[i]= transform(str[i])
-			i++;
+		str[i]= transform(str[i]);
+		i++;
 	}
 	return (str);
 }
