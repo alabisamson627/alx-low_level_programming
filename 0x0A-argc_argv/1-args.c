@@ -1,18 +1,15 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main: prints the name number of the arguments passed
- * @argc: Count arguments
- * @argv: Arguments
+ * main: prints the name number of arguments passed to it
+ * @argc: number of arguements passed to the function
+ * @argv: argument vector of pointers to strings
  *
- * Return: Always 0 (Success)
+ * Return: always 0
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]
+_attribute_((unused)))
 {
-(void) argv; /*Ignore argv*/
-printf("%i\n", argc - 1);
-
-return (0);
+	printf("%d\n", argc - 1);
+	return (0);
 }
