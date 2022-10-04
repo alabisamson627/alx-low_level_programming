@@ -14,6 +14,7 @@ int len(char *str)
 	if (str != NULL)
 	{
 		while (str[len])
+			len++;
 	}
 	return (len);
 }
@@ -69,7 +70,7 @@ char **strtow(char *str)
 				size++;
 			else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 			{
-				split[j] = (char *)malloc(siseof(char) * size + 1);
+				split[j] = (char *)malloc(sizeof(char) * size + 1);
 				if (split[j] != NULL)
 				{
 					while (temp < size)
