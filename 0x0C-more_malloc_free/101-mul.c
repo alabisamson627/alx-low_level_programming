@@ -62,7 +62,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	return (dest);
 }
 /**
- * check_for_digits - checks the srguments to ensure they are digits
+ * check_for_digits - checks the arguments to ensure they are digits
  * @av: pointer to arguments
  *
  * Return: 0 if digits, 1 if not
@@ -76,8 +76,19 @@ int check_for_digits(char **av)
 		for (j = 0; av[i][j]; j++)
 		{
 			if (av[i][j] < '0' || av[i][j] > '9')
-				retrun (1);
+				return (1);
 		}
 	}
 	return (0);
 }
+
+/**
+ * main - multiply two numbers
+ * @argc: number of arguments
+ * @argv: argument vector
+ *
+ * Return: zero, or exit status of 98 if failure
+ */
+int main(int argc, char *argv[])
+{
+	int
