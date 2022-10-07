@@ -15,10 +15,6 @@ char *p;
 unsigned int i, max = new_size;
 char *oldp = ptr;
 
-char *p;
-unsigned int i, max = new_size;
-char *oldp = ptr;
-
 if (ptr == NULL)
 {
 p = malloc(new_size);
