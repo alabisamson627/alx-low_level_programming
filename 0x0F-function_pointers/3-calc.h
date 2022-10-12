@@ -1,7 +1,7 @@
 #ifndef CALC_H
 #define CALC_H
 
-#include <stdi.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -11,7 +11,7 @@
  * @op: The operator
  * @f: The function associated
  */
-typeedof struct op
+typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
