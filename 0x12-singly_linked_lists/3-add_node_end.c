@@ -1,3 +1,4 @@
+#include "lists.h"
 #include <string.h>
 
 /**
@@ -9,7 +10,6 @@
  * Return:If the function fails - NULL.
  * Otherwise - the address of the element.
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
 	char *dup;
