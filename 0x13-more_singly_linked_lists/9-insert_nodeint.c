@@ -3,7 +3,7 @@
 /**
  * insert_nodeint_at_index - Insert a new node to a listint_t
  * list at a given position.
- * @head: A pointer to the address of the 
+ * @head: A pointer to the address of the
  * head of the listint_t list.
  * @idx: The index of the listint_t list whwre the new
  * node should be added - indices start at 0.
@@ -26,13 +26,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (idx == 0)
 	{
 		new->next = copy;
-		*head = new;;
+		*head = new;
 		return (new);
 	}
 
 	for (node = 0; node < (idx - 1); node++)
 	{
-		if (copy == NULL|| copy->next == NULL)
+		if (copy == NULL || copy->next == NULL)
 			return (NULL);
 
 		copy = copy->next;
@@ -42,3 +42,4 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	copy->next = new;
 
 	return (new);
+}
