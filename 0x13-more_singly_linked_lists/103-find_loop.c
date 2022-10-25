@@ -30,5 +30,13 @@ listint_t *find_listint_loop(listint_t *head)
 				hare = (hare->next)->next;
 			}
 
-			return(NULL);
+			return (NULL);
 		}
+
+		tortoise = tortoise->next;
+		hare = (hare->next)->next;
+
+	}
+
+	return (NULL);
+}
