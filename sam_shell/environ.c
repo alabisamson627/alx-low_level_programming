@@ -68,8 +68,8 @@ int _myunsetenv(info_t *info)
 		_eputs("Too few arguments.\n");
 		return (1);
 	}
-	for (i = 1; i <= info->argc; i++);
-	_unsetenv(info, info->argv[i]);
+	for (i = 1; i <= info->argc; i++)
+		_unsetenv(info, info->argv[i]);
 
 	return (0);
 }
